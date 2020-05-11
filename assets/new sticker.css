@@ -22,8 +22,8 @@ body {
 .image {
   background-image: url(../img/The\ deep\ Pollock.jpg);
   background-size: cover;
-  width: 340px;
-  height: 496px;
+  width: calc(100% - 4px);
+  height: 85.5%;
   border: 2px var(--main-secondary-color) solid ;
   position: relative;
   transition: background-image 0.7s ease-in-out;
@@ -45,43 +45,49 @@ body {
 
 .author {
   color: var(--main-secondary-color);
-  width: 344px;
-  height: 30px;
+  width: 100%;
+  height: 7%;
   text-align: right;
   font-weight: bold;
   font-size: 18px;
+  position: relative;
+}
+
+.author span {
   position: absolute;
-  bottom: 50px;
+  right: 5%;
+  top: calc(50% - 8px);
 }
 
 .description {
   background-color: var(--main-secondary-color);
   color: var(--main-primary-color);
-  width: 304px;
-  height: 40px;
+  width: 100%;
+  height: 7%;
   font-weight: bold;
   font-size: 22px;
-  line-height: 40px;
+  position: relative;
+}
+
+.description span {
   position: absolute;
-  bottom: 10px;
-  text-align: right;
-  padding-right: 40px;
+  right: 10%;
+  top: calc(50% - 11px);
+  
 }
 
 .logo {
   background-color: var(--main-primary-color);
-  width: 70px;
-  height: 85px;
+  width: 19.23%;
+  height: 14.17%;
   position: absolute;
   border: 2px solid var(--main-secondary-color);
-  left: 30px;
-  bottom: 30px;
-  position: absolute;
+  left: 8.24%;
+  bottom: 5%;
 }
 
 .logo img {
-  width: 65px;
-  margin-top: 10px;
-  margin-left: 2px;
+  width: 100%;
+  margin-top: 8%;
 }
 
