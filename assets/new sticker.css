@@ -1,0 +1,87 @@
+:root {
+  --main-bg-color:  rgb(142, 175, 196);
+  --main-primary-color:  rgb(173, 228, 228);
+  --main-secondary-color:  #2b2c22;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: 'Syncopate', sans-serif;
+}
+
+.container {
+  background-color: var(--main-primary-color);
+  width: 344px;
+  height: 580px;
+  padding: 10px;
+  left: 30px;
+  top: 30px;
+  position: relative;
+} 
+
+.image {
+  background-image: url(../img/The\ deep\ Pollock.jpg);
+  background-size: cover;
+  width: 340px;
+  height: 496px;
+  border: 2px var(--main-secondary-color) solid ;
+  position: relative;
+  transition: background-image 0.7s ease-in-out;
+}
+
+.image:hover {
+  background-image: url(../img/1950\ pollock\ dripping.jpg);
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  min-width: 12%;
+  min-height: 100%;
+  top: 0px;
+  left: 0px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, transparent);
+}
+
+.author {
+  color: var(--main-secondary-color);
+  width: 344px;
+  height: 30px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  bottom: 50px;
+}
+
+.description {
+  background-color: var(--main-secondary-color);
+  color: var(--main-primary-color);
+  width: 304px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 40px;
+  position: absolute;
+  bottom: 10px;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.logo {
+  background-color: var(--main-primary-color);
+  width: 70px;
+  height: 85px;
+  position: absolute;
+  border: 2px solid var(--main-secondary-color);
+  left: 30px;
+  bottom: 30px;
+  position: absolute;
+}
+
+.logo img {
+  width: 65px;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+
